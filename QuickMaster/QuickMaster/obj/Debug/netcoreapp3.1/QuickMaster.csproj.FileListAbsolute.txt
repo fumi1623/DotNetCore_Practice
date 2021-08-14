@@ -79,3 +79,4 @@ C:\Users\ancie\source\repos\QuickMaster\QuickMaster\bin\Debug\netcoreapp3.1\runt
 C:\Users\ancie\source\repos\QuickMaster\QuickMaster\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\ancie\source\repos\QuickMaster\QuickMaster\obj\Debug\netcoreapp3.1\QuickMaster.csproj.AssemblyReference.cache
 C:\Users\ancie\source\repos\QuickMaster\QuickMaster\obj\Debug\netcoreapp3.1\QuickMaster.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ancie\source\repos\QuickMaster\QuickMaster\obj\Debug\netcoreapp3.1\Razor\Views\Hello\List.cshtml.g.cs

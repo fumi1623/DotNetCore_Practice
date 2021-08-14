@@ -1,0 +1,28 @@
+﻿@*モデルの型を宣言*@
+@model IEnumerable<QuickMaster.Models.Book>
+@{
+    ViewData["Title"] = "List";
+}
+<h2>List</h2>
+<table class="table">
+    <thead>
+        <tr>
+            <th>書名</th>
+            <th>価格</th>
+            <th>出版社</th>
+            <th>配布サンプル</th>
+        </tr>
+    </thead>
+    <tbody>
+        @*書籍情報を順に出力*@
+        @foreach(var item in Model) {
+             <tr>
+                 <td>@item.Title</td>
+                 <td>@item.Price</td>
+                 <td>@item.Publisher</td>
+                 <td>@item.Sample</td>
+             </tr>
+         }
+    </tbody>
+</table>
+
