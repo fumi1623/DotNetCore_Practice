@@ -115,7 +115,7 @@ namespace QuickMaster.Controllers
                     _context.Update(book);
                     await _context.SaveChangesAsync();
                 }
-                //競合が発生した場合の処理
+                //競合が発生した場合の処理(複数のユーザーが同じデータの更新を行おうとしたときなど)
                 catch (DbUpdateConcurrencyException)
                 {
                     //書籍が存在しなければ404
@@ -139,29 +139,36 @@ namespace QuickMaster.Controllers
         // GET: Books/Delete/5
         public async Task<IActionResult> Delete(int? id)
         {
+            //引数idが空の場合は404
             if (id == null)
             {
                 return NotFound();
             }
 
+            //引数idをキーに書籍情報を取得
             var book = await _context.Book
                 .FirstOrDefaultAsync(m => m.Id == id);
+            //合致する書籍がない場合は404
             if (book == null)
             {
                 return NotFound();
             }
-
+            //削除フォームを表示
             return View(book);
         }
 
         // POST: Books/Delete/5
+        //ボタンで削除処理を実行・アクション名を宣言
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
+            //引数idをキーに書籍情報を取得
             var book = await _context.Book.FindAsync(id);
+            //該当するレコードを削除
             _context.Book.Remove(book);
             await _context.SaveChangesAsync();
+            //削除後は一覧画面にリダイレクト
             return RedirectToAction(nameof(Index));
         }
 
