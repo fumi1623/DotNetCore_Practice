@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel;
+using System.ComponentModel.DataAnnotations;
 
 namespace QuickMaster.Models {
     public class Book {
@@ -6,6 +7,7 @@ namespace QuickMaster.Models {
         [DisplayName("書名")]
         public string Title { get; set; }
         [DisplayName("価格")]
+        [DataType(DataType.Currency)]
         public int Price { get; set; }
         [DisplayName("出版社")]
         public string Publisher { get; set; }

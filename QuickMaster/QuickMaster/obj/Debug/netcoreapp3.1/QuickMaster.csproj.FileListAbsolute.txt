@@ -155,3 +155,4 @@ C:\Users\ancie\source\repos\QuickMaster\QuickMaster\obj\Debug\netcoreapp3.1\Razo
 C:\Users\ancie\source\repos\QuickMaster\QuickMaster\obj\Debug\netcoreapp3.1\Razor\Views\Books\Details.cshtml.g.cs
 C:\Users\ancie\source\repos\QuickMaster\QuickMaster\obj\Debug\netcoreapp3.1\Razor\Views\Books\Edit.cshtml.g.cs
 C:\Users\ancie\source\repos\QuickMaster\QuickMaster\obj\Debug\netcoreapp3.1\Razor\Views\Books\Index.cshtml.g.cs
+C:\Users\ancie\source\repos\QuickMaster\QuickMaster\obj\Debug\netcoreapp3.1\Razor\Views\Shared\DisplayTemplates\Currency.cshtml.g.cs
