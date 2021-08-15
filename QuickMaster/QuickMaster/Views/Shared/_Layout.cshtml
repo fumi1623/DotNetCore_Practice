@@ -31,6 +31,7 @@
     </header>
     <div class="container">
         <main role="main" class="pb-3">
+            @*メインコンテンツを埋め込む*@
             @RenderBody()
         </main>
     </div>
@@ -43,6 +44,7 @@
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
+    @*サブコンテンツを埋め込む(複数可能)*@
     @RenderSection("Scripts", required: false)
 </body>
 </html>
